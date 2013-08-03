@@ -1,0 +1,18 @@
+Source: uboot-wandboard
+Section: kernel
+Priority: extra
+Maintainer: Heinrich Schuchardt <xypron.glpk@gmx.de>
+Build-Depends:
+ debhelper (>= 9.0.0)
+Standards-Version: 3.9.4.0
+Vcs-Git: http://git.xypron.de/git/uboot-wandboard.git
+Vcs-browser: http://git.xypron.de
+Homepage: http://www.xypron.de
+
+Package: uboot-wandboard-quad
+Section: kernel
+Architecture: armhf
+Depends:
+Suggests:
+Description: U-Boot for Wandboard Quad
+ U-Boot universal boot loader for Wandboard Quad
