@@ -7,4 +7,9 @@ export DH_VERBOSE=1
 export DH_OPTIONS
 
 %:
-dh $@
+	dh $@
+
+override_dh_auto_configure:
+	make wandboard_quad_config
+
+
