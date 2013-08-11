@@ -18,5 +18,5 @@ override_dh_auto_configure:
 
 override_dh_install:
 	mkdir -p -m 755 $(DESTDIR)/boot;true
-	cp u-boot.imx $(DESTDIR)/boot/u-boot-wandboard-quad.imx
+	cp u-boot.imx $(DESTDIR)/boot/uboot-wandboard-quad.imx
 
