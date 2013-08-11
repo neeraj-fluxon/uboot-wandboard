@@ -10,13 +10,15 @@ export DH_OPTIONS
 	dh $@
 
 override_dh_auto_clean:
+	dh_quilt_unpatch
 	make distclean
 
 override_dh_auto_configure:
-	env
+	dh_quilt_patch
 	make wandboard_quad_config
 
 override_dh_install:
+	dh_quilt_unpatch
 	mkdir -p -m 755 $(DESTDIR)/boot;true
 	cp u-boot.imx $(DESTDIR)/boot/uboot-wandboard-quad.imx
 
