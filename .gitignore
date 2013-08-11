@@ -17,7 +17,6 @@
 *.cfgtmp
 
 # Build tree
-/build-*
 
 #
 # Top-level generic files
