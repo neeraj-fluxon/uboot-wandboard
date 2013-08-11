@@ -63,7 +63,7 @@ Installation
 
  and uninstalled with
 
- <pre>apt-get remove  uboot-wandboard-[solo|dual|quad]-[version]</pre>
+ <pre>apt-get remove  uboot-wandboard-[solo|dual|quad]</pre>
 
  The installation routine will overwrite any existing bootloader.
  A copy of the bootloader will be written to /boot.
