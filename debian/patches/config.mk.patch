@@ -1,0 +1,13 @@
+Reset LDFLAGS during make due to imcompatibility with linker.
+Index: uboot-wandboard-0.1/config.mk
+===================================================================
+--- uboot-wandboard-0.1.orig/config.mk	2013-08-11 12:03:36.180135278 +0200
++++ uboot-wandboard-0.1/config.mk	2013-08-11 12:03:42.000282178 +0200
+@@ -59,6 +59,7 @@
+ endif
+ 
+ # clean the slate ...
++LDFLAGS =
+ PLATFORM_RELFLAGS =
+ PLATFORM_CPPFLAGS =
+ PLATFORM_LDFLAGS =

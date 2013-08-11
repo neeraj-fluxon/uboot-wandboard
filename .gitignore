@@ -13,7 +13,6 @@
 *.su
 *~
 *.swp
-*.patch
 *.bin
 *.cfgtmp
 
@@ -66,8 +65,6 @@ patches-*
 .stgit-edit.txt
 
 # quilt's files
-patches
-series
 
 # gdb files
 .gdb_history

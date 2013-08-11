@@ -42,7 +42,6 @@
 #define CONFIG_ENV_OVERWRITE
 #define CONFIG_CONS_INDEX		1
 #define CONFIG_BAUDRATE			115200
-#define CONFIG_NETCONSOLE		1
 
 /* Command definition */
 #include <config_cmd_default.h>

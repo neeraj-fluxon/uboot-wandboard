@@ -1,0 +1,13 @@
+Provide netconsole
+Index: uboot-wandboard-0.1/include/configs/wandboard.h
+===================================================================
+--- uboot-wandboard-0.1.orig/include/configs/wandboard.h	2013-08-11 12:12:56.000000000 +0200
++++ uboot-wandboard-0.1/include/configs/wandboard.h	2013-08-11 12:20:06.754732364 +0200
+@@ -42,6 +42,7 @@
+ #define CONFIG_ENV_OVERWRITE
+ #define CONFIG_CONS_INDEX		1
+ #define CONFIG_BAUDRATE			115200
++#define CONFIG_NETCONSOLE		1
+ 
+ /* Command definition */
+ #include <config_cmd_default.h>
