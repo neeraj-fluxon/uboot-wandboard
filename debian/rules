@@ -18,7 +18,6 @@ override_dh_auto_configure:
 	make wandboard_quad_config
 
 override_dh_install:
-	dh_quilt_unpatch
-	mkdir -p -m 755 $(DESTDIR)/boot;true
-	cp u-boot.imx $(DESTDIR)/boot/uboot-wandboard-quad.imx
+	mkdir -p -m 755 debian/uboot-wandboard-quad/boot;true
+	cp u-boot.imx debian/uboot-wandboard-quad/boot/uboot-wandboard-quad.imx
 
