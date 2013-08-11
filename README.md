@@ -4,8 +4,8 @@ uboot-wandboard
 Overview
 --------
 
- Uboot-wandboard provides a Debian package which installs the U-Boot installer
- for the Wandboard computer.
+ Uboot-wandboard provides a Debian package which installs the U-Boot boot
+ loader for the Wandboard computer.
 
  The <href="http://www.wandboard.org">Wandboard</a> computer is a low power
  computer based on the Freescale i.MX6 Cortex-A9 processor.
