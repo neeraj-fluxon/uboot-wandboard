@@ -26,7 +26,7 @@ Building
 
  <pre>git clone https://github.com/xypron/uboot-wandboard.git</pre>
 
- To build the Debian package download the build repositories and
+ To build the Debian package download the build dependencies and
  <pre>cd uboot-wandboard
  ./build-dpkg.sh</pre>
 
