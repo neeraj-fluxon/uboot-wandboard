@@ -31,8 +31,8 @@ Building
  ./build-dpkg.sh</pre>
 
 
-!!! WARNING !!!
----------------
+Prerequisites
+-------------
 
  The package assumes that you have partioned the SD card in slot 0
  (/dev/mmcblk0) such that at least 1MB is left free before the first partition.
