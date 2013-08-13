@@ -3,6 +3,30 @@
 #
 # see: dh_installdeb(1)
 
+flash() {
+  image=${1?"image file not specified"}
+  echo "A new version of the boot loader U-Boot shall be copied to device /dev/mmcblk0."
+  echo "Do you want to proceed? [y|N] \c"
+  read -r rc
+  case $rc in
+    y*|Y*)
+      echo "Copying $image"
+      dd if=$image of=/dev/mmcblk0 bs=512
+      rc=$?
+      if $rc != 0 
+	  then
+        echo "Copying $image failed"
+        exit $rc
+      fi
+	  ;;
+    *) 
+      echo "You may copy the boot loader later with"
+      echo "dd if=$image of=/dev/mmcblk0 bs=512 skip=2"
+	  ;;
+  esac
+  exit 0
+}
+
 set -e
 
 # summary of how this script can be called:
@@ -23,8 +47,7 @@ case "$1" in
 
     echo $0 $1 $2
 
-    echo Writing u-boot image to SD card.
-    dd if=/boot/uboot-wandboard-quad.imx of=/dev/mmcblk0 bs=512 seek=2
+    flash /boot/uboot-wandboard-quad.imx
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
