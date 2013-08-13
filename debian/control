@@ -13,6 +13,7 @@ Package: uboot-wandboard-solo
 Section: kernel
 Architecture: armhf
 Provides: uboot-wandboard
+Conflicts: uboot-wandboard-dual, uboot-wandboard-quad
 Depends:
 Suggests:
 Description: U-Boot for Wandboard Solo
@@ -22,6 +23,7 @@ Package: uboot-wandboard-dual
 Section: kernel
 Architecture: armhf
 Provides: uboot-wandboard
+Conflicts: uboot-wandboard-solo, uboot-wandboard-quad
 Depends:
 Suggests:
 Description: U-Boot for Wandboard Dual
@@ -31,6 +33,7 @@ Package: uboot-wandboard-quad
 Section: kernel
 Architecture: armhf
 Provides: uboot-wandboard
+Conflicts: uboot-wandboard-solo, uboot-wandboard-dual
 Depends:
 Suggests:
 Description: U-Boot for Wandboard Quad
