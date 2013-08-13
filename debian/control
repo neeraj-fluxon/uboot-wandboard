@@ -3,7 +3,8 @@ Section: kernel
 Priority: extra
 Maintainer: Heinrich Schuchardt <xypron.glpk@gmx.de>
 Build-Depends:
- debhelper (>= 9.0.0)
+ debhelper (>= 9.0.0),
+ quilt
 Standards-Version: 3.9.4.0
 Vcs-Git: https://github.com/xypron/uboot-wandboard.git
 Vcs-browser: https://github.com/xypron/uboot-wandboard
