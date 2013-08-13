@@ -5,13 +5,32 @@ Maintainer: Heinrich Schuchardt <xypron.glpk@gmx.de>
 Build-Depends:
  debhelper (>= 9.0.0)
 Standards-Version: 3.9.4.0
-Vcs-Git: http://git.xypron.de/git/uboot-wandboard.git
-Vcs-browser: http://git.xypron.de
-Homepage: http://www.xypron.de
+Vcs-Git: https://github.com/xypron/uboot-wandboard.git
+Vcs-browser: https://github.com/xypron/uboot-wandboard
+Homepage: https://github.com/xypron/uboot-wandboard
+
+Package: uboot-wandboard-solo
+Section: kernel
+Architecture: armhf
+Provides: uboot-wandboard
+Depends:
+Suggests:
+Description: U-Boot for Wandboard Solo
+ U-Boot universal boot loader for Wandboard Solo
+
+Package: uboot-wandboard-dual
+Section: kernel
+Architecture: armhf
+Provides: uboot-wandboard
+Depends:
+Suggests:
+Description: U-Boot for Wandboard Dual
+ U-Boot universal boot loader for Wandboard Dual
 
 Package: uboot-wandboard-quad
 Section: kernel
 Architecture: armhf
+Provides: uboot-wandboard
 Depends:
 Suggests:
 Description: U-Boot for Wandboard Quad
