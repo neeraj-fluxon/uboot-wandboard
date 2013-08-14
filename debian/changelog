@@ -1,3 +1,9 @@
+uboot-wandboard (0.2) unstable; urgency=low
+
+  * Postinstallation routines adjusted
+
+ -- Heinrich Schuchardt <xypron.glpk@gmx.de>  Tue, 13 Aug 2013 08:00:00 +0200
+
 uboot-wandboard (0.1-2) unstable; urgency=low
 
   * Add packages for wandboard dual and solo. Closes (#XXXXXX)
