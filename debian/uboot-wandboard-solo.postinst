@@ -11,7 +11,7 @@ flash() {
   case $rc in
     y*|Y*)
       echo "Copying $image"
-      dd if=$image of=/dev/mmcblk0 bs=512 skip=2
+      dd if=$image of=/dev/mmcblk0 bs=512 seek=2
       rc=$?
       if $rc != 0 
 	  then
@@ -21,7 +21,7 @@ flash() {
 	  ;;
     *) 
       echo "You may copy the boot loader later with"
-      echo "dd if=$image of=/dev/mmcblk0 bs=512 skip=2"
+      echo "dd if=$image of=/dev/mmcblk0 bs=512 seek=2"
 	  ;;
   esac
   exit 0
