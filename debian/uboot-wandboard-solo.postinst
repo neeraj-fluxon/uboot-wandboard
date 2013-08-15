@@ -11,7 +11,7 @@ flash() {
   case $rc in
     y*|Y*)
       echo "Copying $image"
-      dd if=$image of=/dev/mmcblk0 bs=512
+      dd if=$image of=/dev/mmcblk0 bs=512 skip=2
       rc=$?
       if $rc != 0 
 	  then

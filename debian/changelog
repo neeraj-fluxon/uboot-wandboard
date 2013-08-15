@@ -1,8 +1,8 @@
-uboot-wandboard (0.3) unstable; urgency=low
+uboot-wandboard (0.4) unstable; urgency=low
 
   * Postinstallation routines adjusted
 
- -- Heinrich Schuchardt <xypron.glpk@gmx.de>  Wed, 14 Aug 2013 08:00:00 +0200
+ -- Heinrich Schuchardt <xypron.glpk@gmx.de>  Wed, 15 Aug 2013 08:00:00 +0200
 
 uboot-wandboard (0.1-2) unstable; urgency=low
 
